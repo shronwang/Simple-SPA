@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './style/App.css';
 import { Route , NavLink , HashRouter} from 'react-router-dom';
 import IconBar from './IconBar';
 import Home from './Home';
@@ -15,9 +15,9 @@ class App extends Component {
         <IconBar />
         <ul className="header">
           <li><NavLink to="/">首页</NavLink></li>
-          <li><NavLink to="/social">社会</NavLink></li>
-          <li><NavLink to="/finance">财经</NavLink></li>
-          <li><NavLink to="/world">国际</NavLink></li>
+          <li className='header-item'><NavLink to="/social">社会</NavLink></li>
+          <li className='header-item'><NavLink to="/finance">财经</NavLink></li>
+          <li className='header-item'><NavLink to="/world">国际</NavLink></li>
         </ul>
         <div className="content">
            <Route exact path="/" component={Home} />

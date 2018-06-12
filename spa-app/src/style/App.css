@@ -1,0 +1,43 @@
+/* rem适配 */
+html{
+	font-size: 10vw;
+}
+/* header部分 */
+.header{
+	height: 1rem;
+	width: 100%;
+	font-size: .4rem;
+	background-color: #FFFAFA;
+	line-height: 1rem;
+	padding-left: .4rem;
+}
+.header li{
+	margin-right: .8rem;
+	display: inline-block;
+	position: relative;
+}
+a.active{
+	color: red;
+}
+.header-item a.active:after{
+	background: #ee1a1a;
+	display: block;
+	width: .15rem;
+	height: .05rem;			    
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	content: " ";
+}
+.header-item a.active:before {
+	background: #ee1a1a;
+	display: block;
+	width: .15rem;
+	height: .05rem;			    
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	content: " ";
+}
+/* header部分end*/
+
